@@ -1,0 +1,4 @@
+<div class="row" *ngFor="let play of playerList">
+<a  [routerLink]="['/showDetails',play.jersyNo]" (click)="showDetails(play.jersyNo)">{{play.jersyNo}}</a> &nbsp;&nbsp;&nbsp;
+<a  [routerLink]="['/showPlayerName',play.playerName]" (click)="showPlayerName(play.playerName)">{{play.playerName}}</a>
+</div>
